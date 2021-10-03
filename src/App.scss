@@ -1,0 +1,70 @@
+$greyDark: rgb(10, 10, 10);
+$greyLight: #222222;
+$greyLighter: #2b2b2b;
+$greyText: #b3b3b3;
+
+.App {
+  height: calc(100vh - 90px);
+  background: $greyLight;
+}
+
+.navBar {
+  width: 220px;
+  height: calc(100% - 10px);
+  background: $greyDark;
+  padding: 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  .logo {
+    padding: 1.5rem 0.8rem;
+    img {
+      max-width: 130px;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      color: $greyText;
+      list-style: none;
+      border-radius: 5px;
+      padding: 0.8rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &.active {
+        background: $greyLighter;
+      }
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  .cookies {
+    font-size: 0.8rem;
+    color: $greyText;
+    text-align: center;
+    margin-top: auto;
+    padding: 1rem;
+    span {
+      display: block;
+    }
+  }
+}
+
+.outerWrap {
+  height: 100vh;
+  min-height: 100%;
+}
+
+.musicControls {
+  background: $greyLighter;
+  text-align: center;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 2;
+  position: relative;
+}
